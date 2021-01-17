@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ffeaa7;
+	background: linear-gradient(120deg, orange, rgb(28, 77, 238)) no-repeat;
+	min-height: 98vh;
+	font-family: "Architects Daughter", cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 1rem; */
+	/* box-sizing: border-box; */
+	/* color: hsl(198, 1%, 29%); */
+	/* text-align: center;
+	font-size: 130%; */
+}
+
+.container {
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+	max-width: 500px;
+	min-width: 250px;
+	background: #011c31;
+	background-image: radial-gradient(#a74a0c 7.2%, transparent 0);
+	background-size: 25px 25px;
+	border-radius: 10px;
+	box-shadow: 4px 30px 70px 20px #00000040;
+	padding: 1rem;
+}
+
+.heading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.heading h1 {
+	transform: rotate(2deg);
+	padding: 0.2rem 1.5rem;
+	/* border-radius: 20% 5% 20% 5%/5% 20% 25% 20%; */
+	background-color: #eec40a;
+	font-size: 1.5rem;
+}
+
+.form input {
+	background-color: transparent;
+	padding: 0.2rem;
+	outline: none;
+	border: none;
+
+	border-bottom: solid 3px #0315b6;
+	font-size: 1.5rem;
+	color: rgba(245, 245, 245, 0.76);
+
+	/* border-bottom-right-radius: 15px 3px;
+	border-bottom-left-radius: 3px 15px;
+	border: solid 3px transparent;
+	font-family: "Architects Daughter", cursive;
+
+	color: hsla(260, 2%, 25%, 0.7);
+	width: 70%; */
+	/* margin-bottom: 20px; */
+}
+
+/* form input:hover{
+  border-bottom: solid 3px #b6aa03;
+
+} */
+
+button {
+	margin: 0 0 0 10px;
+	border: none;
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	outline: none;
+	font-size: 1.2rem;
+	text-align: center;
+	background: linear-gradient(120deg, orange, rgb(28, 77, 238)) no-repeat;
+}
+
+button span {
+	background: transparent;
+	display: block;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+
+	/* border: 2px solid hsl(198, 1%, 29%); */
+}
+
+li {
+	text-align: left;
+	position: relative;
+	padding: 0.5rem;
+	color: rgba(238, 238, 245, 0.863);
+	font-size: 1.5rem;
+	font-weight: 600;
+	list-style: decimal;
+	cursor: pointer;
+}

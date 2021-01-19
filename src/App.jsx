@@ -7,19 +7,12 @@
 
 import React, { useState } from "react"
 import TodoItem from "./TodoItem"
+import InputArea from "./InputArea"
 
 function App() {
-	const [inputText, setInputText] = useState("")
 	const [items, setItems] = useState([])
-
-	function handleChange(event) {
-		const value = event.target.value
-		setInputText(value)
-	}
-
-	function addItem() {
+	function addItem(inputText) {
 		setItems(preValue => [...preValue, inputText])
-		setInputText("")
 	}
 
 	function deleteItem(id) {
@@ -35,12 +28,7 @@ function App() {
 			<div className='heading'>
 				<h1>To-Do List</h1>
 			</div>
-			<div className='form'>
-				<input onChange={handleChange} type='text' value={inputText} />
-				<button onClick={addItem}>
-					<span>Add</span>
-				</button>
-			</div>
+			<InputArea onAdd={addItem} />
 			{/* -------------------  Todo list Section ------------------------------   */}
 			<div>
 				<ul>
@@ -55,4 +43,3 @@ function App() {
 }
 
 export default App
-

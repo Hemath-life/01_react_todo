@@ -1,7 +1,7 @@
 <h1> Basic Todo web Application using React Js </h1>
 
-Here you can add list using add button
-Delete list items click on the list
+Here you can add list using add button after that to
+Delete list items click the list.
 
 Example:
 
